@@ -1,0 +1,17 @@
+{
+  "name": "com.teispace.chat_backend",
+  "version": "1.0.0",
+  "description": "A Chat backend for flutter_socket_chat_application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Teispace",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1",
+    "socket.io": "^2.4.1"
+  }
+}
