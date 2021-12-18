@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <label for="message">Message:</label><br />
+      <input type="text" id="message" name="message" value="" /><br /><br />
+      <input type="text" id="receiver" name="receiver" value="" /><br /><br />
+      <input id="submit" type="submit" value="Submit" />
+
+      <ul id="messages-list"></ul>
+    </form>
+    <script>
+      const socket = io("http://localhost:5000");
+      let submitButton = document.getElementById("submit");
+      let message = document.getElementById("message");
+      let receiver = document.getElementById("receiver");
+      let messagesList = document.getElementById("messages-list");
+
+      let name = prompt("Enter name");
+
+      socket.emit("login", `{ "userName": "${name}" }`);
+
+      socket.on("receive-message", (data) => {
+        var singleMessage = document.createElement("li");
+        singleMessage.appendChild(document.createTextNode(data.message));
+        messagesList.appendChild(singleMessage);
+      });
+
+      submitButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        socket.emit(
+          "send_message",
+          `{
+          "senderName": "${name}",
+          "receiverName": "${receiver.value}",
+          "message": "${message.value}"
+        }`
+        );
+      });
+    </script>
+  </body>
+</html>
