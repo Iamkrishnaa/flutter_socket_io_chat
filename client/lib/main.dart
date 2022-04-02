@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 // !NOTE: Server socket.io version should be less than 2.4.1
+//can use new flag table to tract recent message and seen status
 void main() {
   runApp(
     GetMaterialApp(

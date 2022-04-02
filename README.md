@@ -2,7 +2,7 @@
 
 Packages used:
 
-## Server
+## Server Config
 
 ### "cors": "^2.8.5",
 
