@@ -30,4 +30,3 @@ Packages used:
 
 #### retrieve messages of certain user
 # flutter_socket_io_chat
-# flutter_socket_io_chat
