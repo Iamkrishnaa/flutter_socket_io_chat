@@ -30,3 +30,20 @@ Packages used:
 
 #### retrieve messages of certain user
 # flutter_socket_io_chat
+
+# Technologies Used
+
+Dart
+65.9%
+ 
+HTML
+22.4%
+ 
+JavaScript
+9.4%
+ 
+Swift
+1.6%
+ 
+Other
+0.7%
