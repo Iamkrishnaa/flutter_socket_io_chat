@@ -33,17 +33,17 @@ Packages used:
 
 # Technologies Used
 
-Dart
+## Dart
 65.9%
  
-HTML
+## HTML
 22.4%
  
-JavaScript
+## JavaScript
 9.4%
  
-Swift
+## Swift
 1.6%
  
-Other
+## Other
 0.7%
