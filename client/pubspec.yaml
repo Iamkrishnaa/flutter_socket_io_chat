@@ -12,17 +12,17 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.2
-  get: ^4.6.1
-  http: ^0.13.4
-  socket_io_client: ^1.0.2
-  web_socket_channel: ^2.1.0
+  cupertino_icons: ^1.0.5
+  get: ^4.6.5
+  http: ^0.13.5
+  socket_io_client: ^2.0.0
+  web_socket_channel: ^2.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.1
 
 flutter:
   uses-material-design: true
